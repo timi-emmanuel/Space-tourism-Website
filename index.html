@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/output.css">  
+    <script defer src="/js/home.js"></script>  
+    <title>Space tourism website</title>
+  </head>
+
+  <body>
+    <!--Top section --> 
+    <header class="text-white relative w-full  ">
+      <!-- top section container -->
+    <div class=" mx-auto z-[1] flex  top-0 left-0 sm:mt-4 md:mt-0 lg:mt-6 items-center sm:px-8 md:px-0 w-full justify-between h-24 lg:border-b-2 lg:border-black  ">
+        <!-- logo portion -->
+        <div id="logo-button" class="sm:pl-0 md:pl-8 border-white">
+          <img src="/assets/shared/logo.svg" alt="" class="md:w-12 md:h-12 sm:w-[40px] sm:h-[40px] cursor-pointer">
+        </div>
+        <!-- quirky line portion -->
+        <div class="hidden lg:block -mr-32">
+          <img src="/assets/shared/line.svg" alt="">
+        </div>
+        
+        <!-- tablet and desktop navbar -->
+        <nav class=" custom hidden md:flex bg-[#ffffff]/[5%] h-full  px-[64px] gap-12  text-white lg:w-[52%]  font-barlow_Condensed md:justify-end text-center  text-lg-[0_6px_4px_0px_rgba(0,0,0,0.5)] box-border text-base tracking-[2px]">
+          <button data-section="home" class="nav-link uppercase flex justify-center items-center transition duration-500 ease-in-out border-b-[4px]  hover:border-white/50 " ><span class=" font-bold">00</span> Home</button>   
+          <button data-section="destination" class="nav-link uppercase flex justify-center items-center transition duration-500 ease-in-out border-b-[5px]  hover:border-white/50 " ><span class="font-bold ">01</span>Destination</button>  
+          <button data-section="crew" class="nav-link uppercase  flex justify-center items-center transition duration-500 ease-in-out border-b-[5px]   hover:border-white/50 " href="#"><span class=" font-bold ">02</span> Crew</button> 
+          <button data-section="technology" class="nav-link  uppercase flex justify-center items-center transition duration-500 ease-in-out border-b-[5px]  hover:border-white/50" href="#"><span class=" font-bold">03</span> Technology</button> 
+        </nav> 
+
+        <!-- mobile-navbar hamburger -->
+        <div class="block md:hidden" id="menu-icon">     
+          <img src="/assets/shared/icon-hamburger.svg" alt="menu">                  
+        </div>
+
+        <!-- mobile-navbar -->
+        <div id="nav-links" class=" md:hidden z-[2] top-0 flex-col space-y-12  bg-fixed h-screen bg-[#0B0D17]/[15%] w-[68%] text-xl text-white font-barlow_Condensed uppercase fixed backdrop-blur-lg flex -right-full  transition-all duration-700 ease-linear tracking-[2px]">
+          <div class=" self-end mt-8 mr-6" id="close-icon">
+            <img class="w-[30px] h-[30px]" src="/assets/shared/icon-close.svg" alt="close image">
+          </div>
+          <div class="ml-10 flex items-start flex-col space-y-6">
+          <button data-section="home" class="nav-link uppercase flex  items-center justify-normal transition duration-500 ease-in-out border-r-[5px] border-white hover:border-white/50  w-full" ><span class=" font-bold mr-3">00</span> Home</button>   
+          <button data-section="destination" class="nav-link uppercase flex justify-normal items-center transition duration-500 ease-in-out border-r-[5px]  hover:border-white/50   w-full"  href="#"><span class="mr-3 font-bold ">01</span>Destination</button>  
+          <button data-section="crew" class="nav-link uppercase flex justify-normal items-center transition duration-500 ease-in-out border-r-[5px]   hover:border-white/50  w-full" href="#"><span class=" font-bold mr-3 ">02</span> Crew</button> 
+          <button data-section="technology" class="nav-link uppercase flex justify-normal items-center transition duration-500 ease-in-out border-r-[5px]   hover:border-white/50 w-full" href="#"><span class=" font-bold mr-3">03</span> Technology</button>
+          </div>            
+        </div>
+    </div>
+    </header>
+
+    <main>
+      <!-- Home section  -->
+      <section id="home"  class="hidden text-white content-section lg:w-[75%] lg:mx-auto mt-16 md:mt-32  lg:pb-32">
+        <div class=" lg:w-full  w-[90%]  mx-auto lg:mx-0 lg:mr-24 text-white flex lg:justify-between lg:items-center gap-24 md:gap-12 lg:gap-36 flex-col lg:flex-row">
+          <!-- text section  -->
+          <div class="w-full lg:w-1/2 px-2 lg:px-0 text-center lg:text-left lg:min-w-[540px]">
+            <p class=" uppercase font-barlow_Condensed text-lightBlue text-[22px] md:text-[28px] sm:tracking-[1px] md:tracking-[4px] lg:tracking-[4px]">So, you want to travel to</p>
+            <h2 class="font-bellefair uppercase mb-3 lg:mb-0 text-[80px]  md:text-[144px]">Space</h2>
+          
+          <p class=" font-barlow text-base md:text-lg text-lightBlue text-[16px] md:text-[16px] lg:text-[18px] md:min-w-[512px] lg:max-w-[540px] lg:leading-8 mx-auto lg:mx-0">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!<p>
+          </div>         
+          <!-- button section  -->
+          <div class="mb-48 lg:mb-0 text-lg md:text-[28px] flex justify-center items-center text-darkBlue text-center  font-bellefair uppercase">
+            <a id="explore-button" class="explore-btn relative md:w-[272px] group md:h-[272px]  w-[144px]  h-[144px] rounded-full bg-white flex justify-center items-center group animte-[pulsating_2s_ease-in-out_forwards_infinite]" href="#">Explore <span class="absolute inset-0 rounded-full bg-white/50 opacity-30 scale-0 group-hover:scale-[1.65] transition-transform duration-100"></span></a>   
+          </div>      
+        </div>  
+      </section>
+
+       <!-- Destination Section  -->
+      <section id="destination" class="content-section hidden">
+        <div class="text-center  md:text-left text-[16px] md:text-[20px] lg:text-[28px] w-[85%] lg:w-[80%] mt-10 font-barlow_Condensed tracking-[2px] text-white uppercase mx-auto "> 
+          <span class="text-white/50 mr-6 font-bold tracking-[4.72px] ">01</span> Pick your destination
+        </div>
+         
+        <!-- Moon section  -->
+       <div id="moon" class="destination-content hidden">
+        <div class="mb-6 lg:mb-32 w-[85%] md:w-[70%] lg:w-[80%] flex flex-col lg:flex-row lg:mt-48 justify-center items-center mx-auto lg:gap-8">
+          <!-- image section  -->
+           <div class="my-12 lg:my-0 lg:w-1/2 lg:flex lg:justify-center ">
+            <img src="/assets/destination/image-moon.webp" alt="" class="w-[150px] h-[150px] md:w-[300px] md:h-[300px] lg:w-[480px] lg:h-[480px]">
+           </div>   
+
+           <!-- text div  -->
+           <div class="lg:w-1/2 lg:px-14">
+            <!-- Nav Pane  -->
+            <div class=" text-[16px] flex p-4 lg:p-0 justify-center lg:justify-normal font-barlow_Condensed gap-6 md:gap-8 tracking-[2px] text-lightBlue h-8 items-center ">
+              <a href="#" class="nav-item h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="moon">MOON</a>
+              <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="mars">MARS</a>
+              <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="europa">EUROPA</a>
+              <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="titan">TITAN</a>          
+            </div>            
+
+            <div class=" flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-6 lg:mb-10  lg:mt-8">
+              <h1 class="text-[56px] md:text-[80px] lg:text-[96px] text-white font-bellefair">MOON</h1>               
+              <p class="leading-[1.8] text-[15px] md:text-[16px] lg:text-[18px] md:px-4 lg:px-0  font-barlow text-lightBlue ">
+                See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+            regain perspective and come back refreshed. While you’re there, take in some history 
+            by visiting the Luna 2 and Apollo 11 landing sites.
+              </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:space-x-12 lg:space-x-16 w-full bg-bue-500 justify-center md:justify-around lg:justify-normal items-center text-center lg:text-left uppercase border-t border-[#979797]  lg:pt-10">
+              <div>
+                <p class="text-[14px] font-barlow_Condensed tracking-[2px] pt-6 lg:pt-0 text-lightBlue"> Avg. distance</p>
+                <h2 class="text-[28px] text-white font-bellefair tracking-[2px]"> 384,400 km</h2>
+              </div>
+              <div>
+                <p class="text-[14px] font-barlow_Condensed tracking-[2px] pt-6 lg:pt-0 text-lightBlue"> Est. travel time</p>
+                <h2 class="text-[28px] text-white font-bellefair tracking-[2px]">3 days</h2>
+              </div>        
+            </div>                          
+           </div> 
+        </div> 
+
+
+       </div>
+              
+
+        <!-- Mars section  -->
+        <div id="mars" class="destination-content hidden">
+          <div class="mb-6 lg:mb-32 w-[85%] md:w-[70%] lg:w-[80%] flex flex-col lg:flex-row lg:mt-48 justify-center items-center mx-auto lg:gap-8">
+            <!-- image section  -->
+             <div class="my-12 lg:my-0 lg:w-1/2 lg:flex lg:justify-center ">
+              <img src="/assets/destination/image-mars.webp" alt="" class="w-[150px] h-[150px] md:w-[300px] md:h-[300px] lg:w-[480px] lg:h-[480px]">
+             </div>   
+  
+             <!-- text div  -->
+             <div class="lg:w-1/2 lg:px-14">
+              <!-- Nav Pane  -->
+              <div class=" text-[16px] flex p-4 lg:p-0 justify-center lg:justify-normal font-barlow_Condensed gap-6 md:gap-8 tracking-[2px] text-lightBlue h-8 items-center ">
+                <a href="#" class="nav-item h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="moon">MOON</a>
+                <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="mars">MARS</a>
+                <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="europa">EUROPA</a>
+                <a href="#" class="nav-item h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="titan">TITAN</a>              
+              </div>            
+  
+              <div class=" flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-6 lg:mb-10  lg:mt-8">
+                <h1 class="text-[56px] md:text-[80px] lg:text-[96px] text-white font-bellefair  ">MARS</h1>               
+                <p class="leading-[1.8] text-[15px] md:text-[16px] lg:text-[18px] md:px-4 lg:px-0  font-barlow text-lightBlue ">
+                  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+                 the tallest planetary mountain in our solar system. It’s two and a half times 
+                 the size of Everest!
+                </p>
+              </div>
+  
+              <div class="flex flex-col md:flex-row md:space-x-12 lg:space-x-16 w-full bg-bue-500 justify-center md:justify-around lg:justify-normal items-center text-center lg:text-left uppercase border-t border-[#979797]  lg:pt-10">
+                <div>
+                  <p class="text-[14px] font-barlow_Condensed tracking-[2px] pt-6 lg:pt-0 text-lightBlue"> Avg. distance</p>
+                  <h2 class="text-[28px] text-white font-bellefair tracking-[2px]"> 225 mil. km</h2>
+                </div>
+                <div>
+                  <p class="text-[14px] font-barlow_Condensed tracking-[2px] pt-6 lg:pt-0 text-lightBlue"> Est. travel time</p>
+                  <h2 class="text-[28px] text-white font-bellefair tracking-[2px]">9 months</h2>
+                </div>        
+              </div>                          
+             </div> 
+          </div> 
+  
+  
+         </div>
+
+        <!-- Europa section  -->
+        <div id="europa" class="destination-content hidden">
+          <div class="mb-6 lg:mb-32 w-[85%] md:w-[70%] lg:w-[80%] flex flex-col lg:flex-row lg:mt-48 justify-center items-center mx-auto lg:gap-8">
+            <!-- image section  -->
+             <div class="my-12 lg:my-0 lg:w-1/2 lg:flex lg:justify-center ">
+              <img src="/assets/destination/image-europa.webp" alt="" class="w-[150px] h-[150px] md:w-[300px] md:h-[300px] lg:w-[480px] lg:h-[480px]">
+             </div>   
+  
+             <!-- text div  -->
+             <div class="lg:w-1/2 lg:px-14">
+              <!-- Nav Pane  -->
+              <div class=" text-[16px] flex p-4 lg:p-0 justify-center lg:justify-normal font-barlow_Condensed gap-6 md:gap-8 tracking-[2px] text-lightBlue h-8 items-center ">
+                <a href="#" class="nav-item h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="moon">MOON</a>
+                <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="mars">MARS</a>
+                <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="europa">EUROPA</a>
+                <a href="#" class="nav-item h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50 " data-target="titan">TITAN</a>              
+              </div>           
+  
+              <div class=" flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-6 lg:mb-10  lg:mt-8">
+                <h1 class="text-[56px] md:text-[80px] lg:text-[96px] text-white font-bellefair  ">EUROPA</h1>               
+                <p class="leading-[1.8] text-[15px] md:text-[16px] lg:text-[18px] md:px-4 lg:px-0  font-barlow text-lightBlue ">
+                  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+                 winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+                ice skating, curling, hockey, or simple relaxation in your snug 
+                wintery cabin.
+                </p>
+              </div>
+  
+              <div class="flex flex-col md:flex-row md:space-x-12 lg:space-x-16 w-full bg-bue-500 justify-center md:justify-around lg:justify-normal items-center text-center lg:text-left uppercase border-t border-[#979797]  lg:pt-10">
+                <div>
+                  <p class="text-[14px] font-barlow_Condensed tracking-[2px] pt-6 lg:pt-0 text-lightBlue"> Avg. distance</p>
+                  <h2 class="text-[28px] text-white font-bellefair tracking-[2px]"> 628 mil. km</h2>
+                </div>
+                <div>
+                  <p class="text-[14px] font-barlow_Condensed tracking-[2px] pt-6 lg:pt-0 text-lightBlue"> Est. travel time</p>
+                  <h2 class="text-[28px] text-white font-bellefair tracking-[2px]">3 years</h2>
+                </div>        
+              </div>                          
+             </div> 
+          </div> 
+  
+  
+         </div>
+
+        <!-- titan section   -->
+        <div id="titan" class="destination-content hidden">
+          <div class="mb-6 lg:mb-32 w-[85%] md:w-[70%] lg:w-[80%] flex flex-col lg:flex-row lg:mt-48 justify-center items-center mx-auto lg:gap-8">
+            <!-- image section  -->
+             <div class="my-12 lg:my-0 lg:w-1/2 lg:flex lg:justify-center ">
+              <img src="/assets/destination/image-titan.webp" alt="" class="w-[150px] h-[150px] md:w-[300px] md:h-[300px] lg:w-[480px] lg:h-[480px]">
+             </div>   
+  
+             <!-- text div  -->
+             <div class="lg:w-1/2 lg:px-14">
+              <!-- Nav Pane  -->
+              <div class=" text-[16px] flex p-4 lg:p-0 justify-center lg:justify-normal font-barlow_Condensed gap-6 md:gap-8 tracking-[2px] text-lightBlue h-8 items-center ">
+                <a href="#" class="nav-item h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="moon">MOON</a>
+                <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="mars">MARS</a>
+                <a href="#" class="nav-item  h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="europa">EUROPA</a>
+                <a href="#" class="nav-item h-8 transition duration-500 ease-in-out border-b-[4px] border-transparent hover:border-white/50" data-target="titan">TITAN</a>              
+              </div>           
+  
+              <div class=" flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-6 lg:mb-10  lg:mt-8">
+                <h1 class="text-[56px] md:text-[80px] lg:text-[96px] text-white font-bellefair uppercase">Titan</h1>               
+                <p class="leading-[1.8] text-[15px] md:text-[16px] lg:text-[18px] md:px-4 lg:px-0  font-barlow text-lightBlue ">
+                  The only moon known to have a dense atmosphere other than Earth, Titan 
+                  is a home away from home (just a few hundred degrees colder!). As a 
+                  bonus, you get striking views of the Rings of Saturn.
+                </p>
+              </div>
+  
+              <div class="flex flex-col md:flex-row md:space-x-12 lg:space-x-16 w-full bg-bue-500 justify-center md:justify-around lg:justify-normal items-center text-center lg:text-left uppercase border-t border-[#979797]  lg:pt-10">
+                <div>
+                  <p class="text-[14px] font-barlow_Condensed tracking-[2px] pt-6 lg:pt-0 text-lightBlue"> Avg. distance</p>
+                  <h2 class="text-[28px] text-white font-bellefair tracking-[2px]"> 1.6 bil. km</h2>
+                </div>
+                <div>
+                  <p class="text-[14px] font-barlow_Condensed tracking-[2px] pt-6 lg:pt-0 text-lightBlue"> Est. travel time</p>
+                  <h2 class="text-[28px] text-white font-bellefair tracking-[2px]">7 years</h2>
+                </div>        
+              </div>                          
+             </div> 
+          </div> 
+  
+  
+         </div>
+
+
+      </section>
+     
+      <!-- Crew Section  -->
+      <section id="crew" class="content-section hidden">
+        <div class="text-center md:text-left text-[16px] md:text-[20px] lg:text-[28px] w-[85%] lg:w-[80%] mt-8  md:mt-10  font-barlow_Condensed tracking-[2px] text-white uppercase mx-auto "> 
+          <span class="text-white/50 mr-6 font-bold tracking-[4.72px] ">02</span> Meet your crew
+        </div>           
+        <!-- commander section  -->
+        <div id="commander" class="crew-content ">
+          <div class="mt-14 mb-6 lg:mb-32 w-[85%] md:w-[70%] lg:w-[80%] flex flex-col lg:flex-row lg:mt-12 justify-center mx-auto lg:gap-12">      
+            <!-- text and nav div   -->
+            <div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-between">   
+              <!-- text div   -->                    
+              <div class=" flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-20 lg:mb-0   lg:mt-48">
+                <h1 class="text-[18px] md:text-[24px] lg:text-[32px] text-white/50 font-bellefair uppercase">Commander</h1>    
+                <h1 class="mb-6 lg:mb-0 text-[24px] md:text-[40px] lg:text-[56px] text-white font-bellefair uppercase">Douglas Hurley</h1>           
+                <p class="leading-[1.8] text-[15px] md:text-[16px] lg:text-[18px]  lg:px-0  font-barlow text-lightBlue text-center lg:text-left">
+                  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+                  and former NASA astronaut. He launched into space for the third time as 
+                  commander of Crew Dragon Demo-2.
+                </p>
+              </div>
+               <!-- Nav Pane  -->
+              <div class=" ">
+                <div class="flex justify-center lg:justify-normal  gap-4  md:gap-8  items-center ">
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out  hover:bg-white/50" data-target="commander"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="specialist"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="pilot"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="engineer"></a>          
+                 </div> 
+              </div>                                   
+            </div>               
+            
+             <!-- image section  -->
+             <div class=" my-12  mx-auto lg:mx-0 md:-mb-16 lg:my-0 w-[80%] lg:w-1/2 flex justify-center ">
+               <img src="/assets/crew/image-douglas-hurley.svg" alt="" class="object-cover ">
+             </div>  
+          </div>   
+        </div>
+        <!-- specialist section -->
+        <div id="specialist" class="crew-content">
+          <div class="mt-14 mb-6 lg:mb-32 w-[85%] md:w-[70%] lg:w-[80%] flex flex-col lg:flex-row lg:mt-12 justify-center mx-auto lg:gap-12">      
+            <!-- text and nav div   -->
+            <div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-between">   
+              <!-- text div   -->                    
+              <div class=" flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-20 lg:mb-0   lg:mt-48">
+                <h1 class="text-[18px] md:text-[24px] lg:text-[32px] text-white/50 font-bellefair uppercase">Mission Specialist</h1>    
+                <h1 class="mb-6 lg:mb-0 text-[24px] md:text-[40px] lg:text-[56px] text-white font-bellefair uppercase">Mark Shuttleworth</h1>           
+                <p class="leading-[1.8] text-[15px] md:text-[16px] lg:text-[18px]  lg:px-0  font-barlow text-lightBlue text-center lg:text-left">
+                  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+                 the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+                African to travel to space as a space tourist.
+                </p>
+              </div>
+               <!-- Nav Pane  -->
+              <div class=" ">
+                <div class="flex justify-center lg:justify-normal  gap-4  md:gap-8  items-center ">
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out  hover:bg-white/50" data-target="commander"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="specialist"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="pilot"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="engineer"></a>          
+                 </div> 
+              </div>                                   
+            </div>               
+            
+             <!-- image section  -->
+             <div class=" my-12 mx-auto lg:mx-0 md:-mb-16 lg:my-0 w-[80%] lg:w-1/2 flex justify-center ">
+               <img src="/assets/crew/image-mark-shuttleworth.svg" alt="" class="object-cover ">
+             </div>  
+          </div>   
+        </div>
+        <!--pilot  section -->
+        <div id="pilot" class="crew-content">
+          <div class="mt-14 mb-6 lg:mb-32 w-[85%] md:w-[70%] lg:w-[80%] flex flex-col lg:flex-row lg:mt-12 justify-center mx-auto lg:gap-12">      
+            <!-- text and nav div   -->
+            <div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-between">   
+              <!-- text div   -->                    
+              <div class=" flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-20 lg:mb-0   lg:mt-48">
+                <h1 class="text-[18px] md:text-[24px] lg:text-[32px] text-white/50 font-bellefair uppercase">Pilot</h1>    
+                <h1 class="mb-6 lg:mb-0 text-[24px] md:text-[40px] lg:text-[56px] text-white font-bellefair uppercase">Victor Glover</h1>           
+                <p class="leading-[1.8] text-[15px] md:text-[16px] lg:text-[18px]  lg:px-0  font-barlow text-lightBlue text-center lg:text-left">
+                  Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+                  International Space Station. Glover is a commander in the U.S. Navy where 
+                  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+                  station systems flight engineer.
+                </p>
+              </div>
+               <!-- Nav Pane  -->
+              <div class=" ">
+                <div class="flex justify-center lg:justify-normal  gap-4  md:gap-8  items-center ">
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out  hover:bg-white/50" data-target="commander"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="specialist"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="pilot"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="engineer"></a>          
+                 </div> 
+              </div>                                   
+            </div>               
+            
+             <!-- image section  -->
+             <div class=" my-12 mx-auto lg:mx-0 md:-mb-16 lg:my-0 w-[80%] lg:w-1/2 flex justify-center ">
+               <img src="/assets/crew/image-victor-glover.svg" alt="" class="object-cover ">
+             </div>  
+          </div>   
+        </div>
+        <!--engineer  section -->
+        <div id="engineer" class="crew-content">
+          <div class="mt-14 mb-6 lg:mb-32 w-[85%] md:w-[70%] lg:w-[80%] flex flex-col lg:flex-row lg:mt-12 justify-center mx-auto lg:gap-12">      
+            <!-- text and nav div   -->
+            <div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-between">   
+              <!-- text div   -->                    
+              <div class=" flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-20 lg:mb-0   lg:mt-48">
+                <h1 class="text-[18px] md:text-[24px] lg:text-[32px] text-white/50 font-bellefair uppercase"> Flight Engineer</h1>    
+                <h1 class="mb-6 lg:mb-0 text-[24px] md:text-[40px] lg:text-[56px] text-white font-bellefair uppercase">Anousheh Ansari</h1>           
+                <p class="leading-[1.8] text-[15px] md:text-[16px] lg:text-[18px]  lg:px-0  font-barlow text-lightBlue text-center lg:text-left">
+                  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+                  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+                  fly to the ISS, and the first Iranian in space.
+                </p>
+              </div>
+               <!-- Nav Pane  -->
+              <div class=" ">
+                <div class="flex justify-center lg:justify-normal  gap-4  md:gap-8  items-center ">
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out  hover:bg-white/50" data-target="commander"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="specialist"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="pilot"></a>
+                  <a href="#" class="crew-nav-item h-[15px] w-[15px] bg-white/30 rounded-full transition duration-300 ease-in-out hover:bg-white/50" data-target="engineer"></a>          
+                 </div> 
+              </div>                                   
+            </div>               
+            
+             <!-- image section  -->
+             <div class=" my-12 mx-auto lg:mx-0 md:-mb-16 lg:my-0 w-[80%] lg:w-1/2 flex justify-center ">
+               <img src="/assets/crew/image-anousheh-ansari.svg" alt="" class="object-cover ">
+             </div>  
+          </div>   
+        </div>       
+      </section>
+
+      <!-- Technology Section  -->
+      <section id="technology" class="content-section hidden">
+        <div class="text-center md:text-left text-[16px] md:text-[20px] lg:text-[28px] w-[85%] lg:w-[80%] my-8  md:mt-10  font-barlow_Condensed tracking-[2px] text-white uppercase mx-auto "> 
+          <span class="text-white/50 mr-6 font-bold tracking-[4.72px] ">03</span> Space launch 101
+        </div>           
+        <!-- vehicle section  -->
+        <div id="vehicle" class="technology-content  lg:ml-0 lg:mr-auto lg:justify-end ">
+          <div class="lg:w-full lg:flex lg:justify-end">
+            <div class="lg:mb-32 w-full flex flex-col lg:flex-row-reverse lg:mt-12 lg:justify-end gap-8 lg:w-[90%] lg:gap-6">    
+              <!-- image section -->
+              <div class="mt-8 lg:mt-0 w-full lg:w-1/2 flex justify-normal">
+                <img src="/assets/technology/image-launch-vehicle-landscape.svg" alt="" class="w-full h-auto md:hidden">
+                <img src="/assets/technology/image-launch-vehicle-desktop-landscape.svg" alt="" class="w-full h-auto lg:hidden sm:hidden md:block">
+                <img src="/assets/technology/image-launch-vehicle-portrait.svg" alt="" class="w-full h-auto lg:block sm:hidden md:hidden">
+              </div>               
+          
+              <!-- text and nav div -->
+              <div class="lg:w-1/2 lg:flex lg:flex-row lg:justify-center lg:gap-16 items-center">  
+                <!-- Nav Pane -->                
+                <div class="flex justify-center lg:justify-normal lg:flex-col gap-4 md:gap-8 lg:gap-7 items-center mb-10 lg:mb-0 font-bellefair">
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="vehicle">1</a>
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="spaceport">2</a>
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="space-capsule">3</a>                           
+                </div> 
+                
+                <!-- text div -->                    
+                <div class="flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-10 md:mb-20 lg:mb-0 ">
+                  <h1 class="mb-6 lg:mb-0 text-[18px] md:text-[24px] lg:text-[32px] text-white/50 font-bellefair uppercase ">The terminology...</h1>    
+                  <h1 class="mb-4 lg:mb-0 text-[24px] md:text-[40px] lg:text-[56px] text-white font-bellefair uppercase ">Launch vehicle</h1>           
+                  <p class="leading-[1.8] text-[15px] md:text-[18px] lg:text-[18px] px-4 lg:px-0 md:w-4/5 lg:w-full font-barlow text-lightBlue text-center lg:text-left lg:leading-[32.4px]">                  
+                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                    payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                    WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                    it's quite an awe-inspiring sight on the launch pad!
+                  </p>
+                </div>
+              </div>               
+            </div>             
+          </div>
+            
+        </div>
+        <!-- spaceport section  -->
+        <div id="spaceport" class="technology-content lg:ml-0 lg:mr-auto lg:justify-end">
+          <div class="lg:w-full lg:flex lg:justify-end">
+            <div class="lg:mb-32 w-full flex flex-col lg:flex-row-reverse lg:mt-12 lg:justify-end gap-8 lg:w-[90%] lg:gap-6">    
+              <!-- image section -->
+              <div class="mt-8 lg:mt-0 w-full lg:w-1/2 flex justify-normal">
+                <img src="/assets/technology/spaceport-mobile-image.svg" alt="" class="w-full h-auto md:hidden">
+                <img src="/assets/technology/spaceport-tablet-image.svg" alt="" class="w-full h-auto lg:hidden sm:hidden md:block">
+                <img src="/assets/technology/spaceport-desktop-image.svg" alt="" class="w-full h-auto lg:block sm:hidden md:hidden">
+              </div>               
+          
+              <!-- text and nav div -->
+              <div class="lg:w-1/2 lg:flex lg:flex-row lg:justify-center lg:gap-16 items-center">  
+                <!-- Nav Pane -->                
+                <div class="flex justify-center lg:justify-normal lg:flex-col gap-4 md:gap-8 lg:gap-7 items-center mb-10 lg:mb-0 font-bellefair">
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="vehicle">1</a>
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="spaceport">2</a>
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="space-capsule">3</a>                           
+                </div> 
+                
+                <!-- text div -->                    
+                <div class="flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-10 md:mb-20 lg:mb-0 ">
+                  <h1 class="mb-6 lg:mb-0 text-[18px] md:text-[24px] lg:text-[32px] text-white/50 font-bellefair uppercase ">The terminology...</h1>    
+                  <h1 class="mb-4 lg:mb-0 text-[24px] md:text-[40px] lg:text-[56px] text-white font-bellefair uppercase "> Spaceport</h1>           
+                  <p class="leading-[1.8] text-[15px] md:text-[18px] lg:text-[18px] px-4 lg:px-0 md:w-4/5 lg:w-full font-barlow text-lightBlue text-center lg:text-left lg:leading-[32.4px]">                  
+                    A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                    by analogy to the seaport for ships or airport for aircraft. Based in the 
+                    famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+                    of the Earth’s rotation for launch.
+                  </p>
+                </div>
+              </div>               
+            </div>             
+          </div>
+            
+        </div>
+        <!-- spaceport section  -->
+        <div id="space-capsule" class="technology-content lg:ml-0 lg:mr-auto lg:justify-end  ">
+          <div class="lg:w-full lg:flex lg:justify-end">
+            <div class="lg:mb-32 w-full flex flex-col lg:flex-row-reverse lg:mt-12 lg:justify-end gap-8 lg:w-[90%] lg:gap-6">    
+              <!-- image section -->
+              <div class=" mt-8 lg:mt-0 w-full lg:w-1/2 flex justify-normal ">
+                <img src="/assets/technology/spacecapsule-mobile-image.svg" alt="space capsule image" class="w-full h-auto md:hidden">
+                <img src="/assets/technology/spacecapsule-tablet-image.svg" alt="space capsule image" class="w-full h-auto lg:hidden sm:hidden md:block">
+                <img src="/assets/technology/spacecapsule-desktop-image.svg" alt="space capsule image" class="w-full h-auto lg:block sm:hidden md:hidden">
+              </div>               
+          
+              <!-- text and nav div -->
+              <div class="lg:w-1/2 lg:flex lg:flex-row lg:justify-center lg:gap-16 items-center">  
+                <!-- Nav Pane -->                
+                <div class="flex justify-center lg:justify-normal lg:flex-col gap-4 md:gap-8 lg:gap-7 items-center mb-10 lg:mb-0 font-bellefair">
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="vehicle">1</a>
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="spaceport">2</a>
+                    <a href="#" class="technology-nav-item flex justify-center items-center h-10 w-10 md:h-14 md:w-14 lg:w-20 lg:h-20 text-[18px] md:text-2xl/none lg:text-[32px] text-white border-2 border-white/25 rounded-full transition duration-300 ease-in-out hover:border-white" data-target="space-capsule">3</a>                           
+                </div> 
+                
+                <!-- text div -->                    
+                <div class="flex justify-center lg:justify-start items-center lg:items-start flex-col text-center lg:text-left mb-10 md:mb-20 lg:mb-0 ">
+                  <h1 class="mb-6 lg:mb-0 text-[18px] md:text-[24px] lg:text-[32px] text-white/50 font-bellefair uppercase ">The terminology...</h1>    
+                  <h1 class="mb-4 lg:mb-0 text-[24px] md:text-[40px] lg:text-[56px] text-white font-bellefair uppercase "> Space capsule</h1>           
+                  <p class="leading-[1.8] text-[15px] md:text-[18px] lg:text-[18px] px-4 lg:px-0 md:w-4/5 lg:w-full font-barlow text-lightBlue text-center lg:text-left lg:leading-[32.4px]">                  
+                    A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+                    capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+                    you'll spend your time during the flight. It includes a space gym, cinema, 
+                      and plenty of other activities to keep you entertained.
+                  </p>
+                </div>
+              </div>               
+            </div>             
+          </div>
+            
+        </div>
+        
+
+      </section>
+    </main>    
+   </body> 
+</html>
