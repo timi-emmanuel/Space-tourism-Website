@@ -129,8 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setActiveLink('home');
 });
 
-function hello(){}
-hello = () => {}
+
 
 // Destination Logic 
 document.addEventListener('DOMContentLoaded', () => {
